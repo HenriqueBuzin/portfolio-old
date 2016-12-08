@@ -1,8 +1,17 @@
 <?php
     include "config.php";
-    $controller = ucfirst(strtolower(addslashes(filter_input(INPUT_GET, 'controller')))) . "Controller";
+
+    if(isset($_GET["controller"])){
+        $controller = ucfirst(strtolower(addslashes(filter_input(INPUT_GET, 'controller')))) . "Controller";
+    }else{
+        $controller = "SiteController";
+    }
     $controller =  new $controller();
-    $action = addslashes(filter_input(INPUT_GET, 'action')) . "Action";
+    if(isset($_GET["action"])){
+        $action = addslashes(filter_input(INPUT_GET, 'action')) . "Action";
+    }else{
+        $action = "listarAction";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
