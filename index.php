@@ -1,6 +1,5 @@
 <?php
     include "config.php";
-
     if(isset($_GET["controller"])){
         $controller = ucfirst(strtolower(addslashes(filter_input(INPUT_GET, 'controller')))) . "Controller";
     }else{
