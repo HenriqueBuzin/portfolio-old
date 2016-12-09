@@ -1,6 +1,30 @@
+ErrorDocument 400 /portifolio/admin/view/error/400.php
+ErrorDocument 401 /portifolio/admin/view/error/401.php
+ErrorDocument 402 /portifolio/admin/view/error/402.php
+ErrorDocument 403 /portifolio/admin/view/error/403.php
+ErrorDocument 404 /portifolio/admin/view/error/404.php
+ErrorDocument 405 /portifolio/admin/view/error/405.php
+ErrorDocument 406 /portifolio/admin/view/error/406.php
+ErrorDocument 407 /portifolio/admin/view/error/407.php
+ErrorDocument 408 /portifolio/admin/view/error/408.php
+ErrorDocument 409 /portifolio/admin/view/error/409.php
+ErrorDocument 410 /portifolio/admin/view/error/410.php
+ErrorDocument 411 /portifolio/admin/view/error/411.php
+ErrorDocument 412 /portifolio/admin/view/error/412.php
+ErrorDocument 413 /portifolio/admin/view/error/413.php
+ErrorDocument 414 /portifolio/admin/view/error/414.php
+ErrorDocument 415 /portifolio/admin/view/error/415.php
+ErrorDocument 416 /portifolio/admin/view/error/416.php
+ErrorDocument 417 /portifolio/admin/view/error/417.php
+ErrorDocument 500 /portifolio/admin/view/error/500.php
+ErrorDocument 501 /portifolio/admin/view/error/501.php
+ErrorDocument 502 /portifolio/admin/view/error/502.php
+ErrorDocument 503 /portifolio/admin/view/error/503.php
+ErrorDocument 504 /portifolio/admin/view/error/504.php
+ErrorDocument 505 /portifolio/admin/view/error/505.php
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-z]+)\/([a-z]+)$ admin/index.php?controller=$1&action=$2 [L]
-RewriteRule ^([a-z]+)\/([a-z]+)\/([0-9]+)$ admin/index.php?controller=$1&action=$2&id=$3 [L]
+RewriteRule ^([a-z]+)\/([a-z]+)$ /portifolio/admin/index.php?controller=$1&action=$2 [L]
+RewriteRule ^([a-z]+)\/([a-z]+)\/([0-9]+)$ /portifolio/admin/index.php?controller=$1&action=$2&id=$3 [L]

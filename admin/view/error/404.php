@@ -1,2 +1,3 @@
 <?php
-echo "Erro 404";
+    echo "Erro 404 - Not Found";
+?>

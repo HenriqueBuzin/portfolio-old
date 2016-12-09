@@ -1,0 +1,24 @@
+.card{
+    display: inline-block;
+    width: 30rem; /* 20 */
+    min-height: 300px;
+    margin-bottom: .75rem;
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card-block{
+    padding: 1.25rem;
+}
+.card-title{
+    margin-bottom: .75rem;
+    text-align: center;
+}
+.card-text{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.card-img-top{
+    height: 180px;
+    width: 100%;
+    display: block;
+}

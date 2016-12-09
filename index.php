@@ -18,8 +18,8 @@
         <meta charset="utf-8">
         <meta name="author" content="Henrique Antonio Buzin Vargas">
         <base href="<?php echo BASE; ?>">
-        <script src="assets/js/jquery.min.js"></script>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="admin/assets/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="admin/assets/css/bootstrap.min.css">
     </head>
     <body>
         <?php

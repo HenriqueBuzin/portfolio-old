@@ -10,7 +10,7 @@
 
             }else if(!file_exists("controller/{$class}.php")){
 
-                include_once "admin/view/error/404.php";
+                include_once "view/error/404.php";
 
                 die();
 
@@ -18,25 +18,25 @@
 
         } else if (strpos($class, "DAO") > -1) {
 
-            if (file_exists("admin/dao/{$class}.php")) {
+            if (file_exists("dao/{$class}.php")) {
 
-                include_once "admin/dao/{$class}.php";
+                include_once "dao/{$class}.php";
 
             }else{
 
-                include_once "admin/view/error/404.php";
+                include_once "view/error/404.php";
 
                 die();
 
             }
 
-        } else if(file_exists("admin/model/{$class}.php")) {
+        } else if(file_exists("model/{$class}.php")) {
 
-            include_once "admin/model/{$class}.php";
+            include_once "model/{$class}.php";
 
         } else {
 
-            include_once "admin/core/{$class}.php";
+            include_once "core/{$class}.php";
 
         }
 
