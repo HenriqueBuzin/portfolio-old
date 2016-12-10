@@ -18,9 +18,9 @@
             <meta charset="utf-8">
             <meta name="author" content="Henrique Antonio Buzin Vargas">
             <base href="<?php echo BASE; ?>">
-            <script src="assets/js/jquery.min.js"></script>
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/adminlte.min.css">
+            <script src="assets/js/bibliotecas/jquery.min.js"></script>
+            <link rel="stylesheet" href="assets/css/bibliotecas/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/bibliotecas/adminlte.min.css">
         </head>
         <body>
         <header class="main-header">
