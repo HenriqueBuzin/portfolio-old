@@ -1,17 +1,17 @@
 <?php
 
-    class SiteController
+    class SitesController
     {
-        private $siteModel;
+        private $sitesModel;
 
-        private $siteDAO;
+        private $sitesDAO;
 
         function __construct()
         {
 
-            $this->siteModel = new SiteModel();
+            $this->sitesModel = new SitesModel();
 
-            $this->siteDAO = new SiteDAO();
+            $this->sitesDAO = new SitesDAO();
         }
 
         public function editarAction(){
@@ -22,9 +22,9 @@
 
             $sites = array();
 
-            $sites = $this->siteDAO->listar();
+            $sites = $this->sitesDAO->listar();
 
-            include_once "view/site/listar.php";
+            include_once "views/sites/listar.php";
 
         }
 

@@ -1,0 +1,7 @@
+.vanilla-form input[type=submit].state-initial{
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    padding: 10px 16px;
+    -webkit-font-smoothing: auto !important;
+}

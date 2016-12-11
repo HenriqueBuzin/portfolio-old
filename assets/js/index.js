@@ -24,4 +24,8 @@ jQuery(document).ready(function() {
         jQuery("#lupa > img").hide(300);
         jQuery(this).attr("placeholder", placeholder);
     });
+    var pathname = window.location.pathname;
+    pathname = pathname.split("/");
+    var c = jQuery(".navbar-nav li a[href*=" + pathname[2] + "]").closest("li");
+    jQuery(c).addClass("active");
 });

@@ -21,8 +21,3 @@
     width: 100%;
     display: block;
 }
-.btn-primary, .btn-primary:hover{
-    width: 100%;
-    background-color: #222 !important;
-    border-color: #080808 !important;
-}

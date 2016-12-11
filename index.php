@@ -3,7 +3,7 @@
     if(isset($_GET["controller"])){
         $controller = ucfirst(strtolower(addslashes(filter_input(INPUT_GET, 'controller')))) . "Controller";
     }else{
-        $controller = "SiteController";
+        $controller = "SitesController";
     }
     $controller =  new $controller();
     if(isset($_GET["action"])){
@@ -41,12 +41,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="./">Sites</a></li>
+                        <li><a href="./sites/listar">Sites</a></li>
+                        <li><a href="./contato/listar">Contato</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <div class="pull-right" id="form">
-                                <input class="form-control" type="search" placeholder="Pesquisar - Em Breve">
+                                <input class="form-control" type="search" placeholder="Pesquisar">
                                 <button id="lupa"><img src="assets/images/lupa.png"></button>
                             </div>
                         </li>
@@ -54,12 +55,24 @@
                 </div>
             </div>
         </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3 jumbotron-title">Bem-vindo</h1>
+                <p class="jumbotron-text">
+                    Esse site mostra o portifólio do desenvolvedor Henrique Buzin,
+                    todos os exemplos podem ser melhor visualizados ao clicar sobre o botão visualizar.
+                    Se gostou do trabalho, ou deve alguma dúvida...
+                    entre em contato clicando no botão abaixo ou na opção correspodente do menu.
+                </p>
+                <p><a class="btn btn-primary btn-lg" href="./contato/listar" role="button">Contato »</a></p>
+            </div>
+        </div>
         <div class="body">
             <?php
                 if(method_exists($controller, $action)){
                     $controller->$action();
                 }else {
-                    include_once "admin/view/error/404.php";
+                    include_once "admin/views/error/404.php";
                 }
             ?>
         </div>

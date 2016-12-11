@@ -44,4 +44,19 @@
         width: auto;
     }
 }
-button:focus {outline:0;}
+button:focus{
+    outline:0;
+}
+nav{
+    margin-bottom: 0 !important;
+}
+.jumbotron-title{
+    text-align: center;
+}
+.jumbotron-text{
+    text-align: justify;
+}
+.btn{
+    background-color: #33a4fd !important;
+    border-color: #33a4fd !important;
+}

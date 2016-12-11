@@ -4,7 +4,7 @@
 
     ini_set('display_errors', 'On');
 
-    class SiteDAO extends Model implements CRUD
+    class SitesDAO extends Model implements CRUD
 
     {
 
