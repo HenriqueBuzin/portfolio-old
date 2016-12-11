@@ -1,0 +1,25 @@
+<?php
+
+    error_reporting(-1);
+
+    ini_set('display_errors', 'On');
+
+    define('BASE', 'http://localhost/portifolio/');
+
+    include_once "autoload.php";
+
+    global $config;
+
+    $config = array();
+
+    $config['dbname'] = '';
+
+    $config['host'] = '';
+
+    $config['charset'] = 'utf8';
+
+    $config['dbuser'] = '';
+
+    $config['pass'] = '';
+
+?>
