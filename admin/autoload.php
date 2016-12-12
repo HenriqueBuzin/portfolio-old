@@ -4,13 +4,13 @@
 
         if (strpos($class, "Controller") > -1) {
 
-            if (file_exists("controllers/{$class}.php")) {
+            if (file_exists("controller/{$class}.php")) {
 
-                include_once "controllers/{$class}.php";
+                include_once "controller/{$class}.php";
 
-            }else if(!file_exists("controllers/{$class}.php")){
+            }else if(!file_exists("controller/{$class}.php")){
 
-                include_once "views/error/404.php";
+                include_once "view/error/404.php";
 
                 die();
 
@@ -24,15 +24,15 @@
 
             }else{
 
-                include_once "views/error/404.php";
+                include_once "view/error/404.php";
 
                 die();
 
             }
 
-        } else if(file_exists("models/{$class}.php")) {
+        } else if(file_exists("model/{$class}.php")) {
 
-            include_once "models/{$class}.php";
+            include_once "model/{$class}.php";
 
         } else {
 
