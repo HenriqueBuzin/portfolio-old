@@ -12,6 +12,7 @@
 
     $config = array();
 
+<<<<<<< HEAD
     /*
 
     $config['dbname'] = 'u160804429_dev';
@@ -35,5 +36,16 @@
     $config['dbuser'] = 'root';
 
     $config['pass'] = 'root';
+=======
+    $config['dbname'] = '';
+
+    $config['host'] = '';
+
+    $config['charset'] = 'utf8';
+
+    $config['dbuser'] = '';
+
+    $config['pass'] = '';
+>>>>>>> origin/master
 
 ?>
