@@ -4,7 +4,7 @@
 
     ini_set('display_errors', 'On');
 
-    define('BASE', 'http://localhost/portifolio/admin/');
+    define('BASE', 'http://localhost/portifolio/');
 
     include_once "autoload.php";
 
